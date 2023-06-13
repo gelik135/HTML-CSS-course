@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+box-sizing: border-box;
+}
+
+body {
+    height: 5366px;
+    width: 1440px;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+}
+
+header {
+    width: 1440px;
+    height: 729px;
+    background: #F1FDFF url("../imgs/flag.png") no-repeat top right;
+}
+
+main {
+max-width: 800px;
+margin: 0 auto;
+}
+h1 {
+    font-weight: 800;
+    line-height: 94.9%;
+    font-size: 93px;
+    color: #9AD2DE;
+    position: absolute;
+    width: 698px;
+    left: 100px;
+    top: 200px;
+    text-transform: uppercase;    
+}
+
+.header-text {
+    font-size: 20px;
+    line-height: 120%;
+    position: absolute;
+    width: 484px;
+    height: 48px;
+    left: 101px;
+    top: 528px;
+}
+
+.program {
+    position: absolute;
+    width: 1240px;
+    height: 1917px;
+    left: 100px;
+    top: 872px;
+}
+
+.program-title {
+    width: 784px;
+    height: 72px;
+    font-size: 60px;
+    line-height: 120%;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+.program-text {
+    width: 740px;
+    height: 32px;
+    font-size: 27px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.program-text-2 {
+    color: #73A6B1;
+    width: 588px;
+    height: 48px;
+    font-size: 20px;
+    text-align: center;    
+}
+
+.scene-first, .scene-second, .scene-third {
+    background: #F1FDFF;
+}
+
+.scene-title {
+    font-size: 46px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.scene-text {
+    width: 322px;
+    height: 24px;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+/* .scene-picture {
+    float: right;
+} */
+
+.button-more {
+    position: absolute;
+    width: 262px;
+    height: 64px;
+    left: 589px;
+    top: 2860px;
+    background: #7AE5FD;
+    border-radius: 87px;
+}
+
+.present {
+    position: absolute;
+    width: 1062px;
+    height: 439.61px;
+    left: 140px;
+    top: 3155.39px;
+}
+
+.present-text {
+    width: 391px;
+    height: 99px;
+}
+
+footer {
+    position: absolute;
+    width: 1685px;
+    height: 1008px;
+    /* left: -123px; */
+    top: 4358px;
+    background: #F9FADF;
+}
