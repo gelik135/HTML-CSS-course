@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 * {
 box-sizing: border-box;
 }
 
 body {
-    height: 5366px;
+    margin: 0 auto;
+    display: block;
     width: 1440px;
     color:black;
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
 }
 
 header {
@@ -18,115 +16,265 @@ header {
     background: #F1FDFF url("../imgs/flag.png") no-repeat top right;
 }
 
-main {
-max-width: 800px;
-margin: 0 auto;
+.header-nav {
+    justify-content: center;
 }
-h1 {
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header-nav-list-item {
+    padding: 10px 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-nav-logo {
+    margin-right: auto;
+    margin-left: 35px;
+}
+
+.blue-btn {
+    background: #7AE5FD;
+    border-radius: 87px;
+    padding: 21px 28px;
+    display: inline-block;
+}
+
+.main-title {
     font-weight: 800;
-    line-height: 94.9%;
     font-size: 93px;
     color: #9AD2DE;
-    position: absolute;
     width: 698px;
-    left: 100px;
-    top: 200px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
+    margin-left: 100px;  
+    margin-top: 80px;
+    margin-bottom: 0;
 }
 
 .header-text {
     font-size: 20px;
-    line-height: 120%;
     position: absolute;
     width: 484px;
-    height: 48px;
-    left: 101px;
-    top: 528px;
+    margin-left: 100px;
+}
+
+main {
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 100px;
 }
 
 .program {
-    position: absolute;
-    width: 1240px;
-    height: 1917px;
-    left: 100px;
-    top: 872px;
+    text-align:center;
+    margin-top: 140px;
+    flex-wrap: wrap;
 }
 
 .program-title {
-    width: 784px;
-    height: 72px;
+    margin: 0;
+    font-style: normal;
+    font-weight: 400;
     font-size: 60px;
-    line-height: 120%;
     text-transform: uppercase;
-    text-align: center;
-
 }
 
 .program-text {
-    width: 740px;
-    height: 32px;
+    margin: 2px;
     font-size: 27px;
-    line-height: 120%;
-    text-align: center;
 }
 
 .program-text-2 {
+    margin-top: 2px;
     color: #73A6B1;
-    width: 588px;
-    height: 48px;
-    font-size: 20px;
-    text-align: center;    
+    font-size: 20px;  
 }
 
-.scene-first, .scene-second, .scene-third {
+.scenes {
+    margin-top: 70px;
+    font-weight: 400;
+}
+
+.scene {
     background: #F1FDFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px;
+    margin-bottom: 70px;
 }
 
 .scene-title {
-    font-size: 46px;
-    line-height: 120%;
+    margin-top: 0;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 46px;
+}
+
+.scene-list {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+}
+
+.scene-list-item {
+    margin-bottom:10px;
 }
 
 .scene-text {
-    width: 322px;
-    height: 24px;
-    font-size: 20px;
-    line-height: 120%;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 45px;
 }
 
-/* .scene-picture {
-    float: right;
-} */
+.time {
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color: #3D8C9D;
+}
 
-.button-more {
-    position: absolute;
-    width: 262px;
-    height: 64px;
-    left: 589px;
-    top: 2860px;
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+
+}
+.button-more, .subscribe-button {
+    padding: 21px 35px;
     background: #7AE5FD;
     border-radius: 87px;
+    width: 262px;
+    font-weight: 400;
+    font-size: 18px;
 }
 
-.present {
-    position: absolute;
-    width: 1062px;
-    height: 439.61px;
-    left: 140px;
-    top: 3155.39px;
+.present-bg {
+    background-image: url("../imgs/fon-5.png");
+    background-repeat: no-repeat;
+}
+
+.present-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 190px 155px 110px 68px;
 }
 
 .present-text {
-    width: 391px;
-    height: 99px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    padding: 170px 175px 170px 0;
+}
+
+.present-picture {
+    padding-left: 630;
 }
 
 footer {
-    position: absolute;
-    width: 1685px;
-    height: 1008px;
-    /* left: -123px; */
-    top: 4358px;
     background: #F9FADF;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-phone {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+    margin-left: 100px;
+    margin-right: 300px;
+    margin-bottom: 100px;
+}
+
+.contact-title {
+    align-self: flex-start;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    margin: 0 60px 0 0;
+}
+
+.contact-data {
+    padding-left: 300px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.phone-logo, .telegram-logo, .whatsapp-logo{
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.telegram-logo {
+    margin-right: 15px;
+}
+
+.phone, .chat {
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px 50px 100px;
+    background: white;
+}
+
+.subscribe-form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.email-picture {
+    width: 508px;
+    height: 348px;
+    margin-top: 80px;
+    margin-right: 90px;
+}
+
+.subscribe-text {
+    margin: 55px 150px 40px 90px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+}
+
+.name, .email {
+    padding: 21px 400px 21px 43px;
+    background: #F9FADF;
+    border-radius: 61px;
+    margin-bottom: 30px;
+    margin-left: 90px;
+    margin-right: 97px;
+    width: 506px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.subscribe-button {
+    width: 506px;
+    margin-left: 90px;
+    margin-right: 97px;
+    margin-bottom: 50px;
 }

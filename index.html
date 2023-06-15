@@ -2,6 +2,9 @@
 <html lang="uk">
 <link rel="stylesheet" href="./assets/css/style.css">   
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,109 +14,134 @@
     <header>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li> 
-                    <a href="#" class="header-nav-logo">
+                <li class="header-nav-list-item header-nav-logo"> 
+                    <a href="#" >
                         <img src="./assets/imgs/Subtract.png" alt='logo'/>
                     </a>
                 </li>
-                <li><a href="#" class="header-nav-list-item">Контакти</a></li>
-                <li><a href="#" class="header-nav-list-item">Головна</a></li>
-                <li><a href="#" class="header-nav-list-item">Програма</a></li>
-                <li><a href="#" class="header-nav-list-item">Як потрапити</a></li>
+                <li class="header-nav-list-item"><a href="#" >Контакти</a></li>
+                <li class="header-nav-list-item"><a href="#">Головна</a></li>
+                <li class="header-nav-list-item"><a href="#">Програма</a></li>
+                <li class="header-nav-list-item"><a href="#" class="blue-btn">Як потрапити</a></li>
             </ul>
         </nav>
-        <h1>Фестиваль перемоги України</h1>
+
+        <h1 class="main-title">Фестиваль перемоги України</h1>
         <p class="header-text">Свято для усіх українців, які працювали, боролися й вірили у перемогу</p>
     </header>
 
     <main>
+        
         <div class="program">
             <h2 class="program-title">Програма фестивалю</h2>
             <p class="program-text">3 сцени, щоб добре й із задоволенням провести час</p>
-            <p class="program-text-2">Усі сцени розташовані так, щоб вам було зручно ходити між ними, і вони одна одну не глушили</p>
+            <p class="program-text-2">Усі сцени розташовані так, щоб вам було зручно ходити між ними, і вони одна одну не глушили</p> 
 
 
             <div class="scenes">
-                <div class="scene-first"> 
-                    <h3 class="scene-title">Сцена Перемоги</h3>
-                    <p class="scene-text">Розбудова України після війни</p>
-                    <ul class="scene-list">
-                        <li class="scene-list-item">Виступ Президента України
-                            10:00-12:00</li>
-                        <li class="scene-list-item">Виступ представників ЄС
-                            13:00-14:00</li>
-                        <li class="scene-list-item">Виступ представників НАТО
-                            14:00-15:00</li>
-                        <li class="scene-list-item">Гімн України
-                            21:25-21:30</li>
-                    </ul>
-                    <img src="./assets/imgs/scene1.png" alt="scene-1" class="scene-picture">
+
+                <div class="scene">
+                    <div class="scene-first-text"> 
+                        <h3 class="scene-title">Сцена Перемоги</h3>
+                        <p class="scene-text">Розбудова України після війни</p>
+
+                        <ul class="scene-list">
+                            <li class="scene-list-item">Виступ Президента України
+                                <p class="time">10:00-12:00</p></li>
+                            <li class="scene-list-item">Виступ представників ЄС
+                                <p class="time">13:00-14:00</p></li>
+                            <li class="scene-list-item">Виступ представників НАТО
+                                <p class="time">14:00-15:00</p></li>
+                            <li class="scene-list-item">Гімн України
+                                <p class="time">21:25-21:30</p></li>
+                        </ul>
+                    </div>    
+                    <div class="scene-picture">    
+                        <img src="./assets/imgs/scene1.png" alt="scene-1" >
+                    </div>
                 </div>
 
-                <div class="scene-second"> 
-                    <h3 class="scene-title">Сцена "Музика"</h3>
+                <div class="scene">
+                    <div class="scene-second"> 
+                        <h3 class="scene-title">Сцена "Музика"</h3>
 
-                    <ul class="scene-list">
-                        <li class="scene-list-item">Артем Квасоваров
-                            14:00-15:00</li>
-                        <li class="scene-list-item">Степан Мега
-                            16:00-17:00</li>
-                        <li class="scene-list-item">Гурт “Протитіла”
-                            17:00-18:00</li>
-                        <li class="scene-list-item">Гурт “Надвірна”
-                            18:00-19:00</li>
-                    </ul>
-                    <img src="./assets/imgs/scene2.png" alt="scene-2">
+                        <ul class="scene-list">
+                            <li class="scene-list-item">Артем Квасоваров
+                                <p class="time">14:00-15:00</p></li>
+                            <li class="scene-list-item">Степан Мега
+                                <p class="time">16:00-17:00</p></li>
+                            <li class="scene-list-item">Гурт “Протитіла”
+                                <p class="time">17:00-18:00</p></li>
+                            <li class="scene-list-item">Гурт “Надвірна”
+                                <p class="time">18:00-19:00</p></li>
+                        </ul>
+                    </div>
+                    <div class="scene-picture">
+                        <img src="./assets/imgs/scene2.png" alt="scene-2">
+                    </div>
                 </div>
 
-                <div class="scene-third"> 
-                    <h3 class="scene-title">Сцена "Майстер-класи для дітей"</h3>
+                <div class="scene">
+                    <div class="scene-third"> 
+                        <h3 class="scene-title">Сцена "Майстер-класи для дітей"</h3>
 
-                    <ul class="scene-list">
-                        <li class="scene-list-item">Музей науки
-                            14:00-15:00</li>
-                        <li class="scene-list-item">Майстер-клас з ліплення
-                            16:00-17:00</li>
-                        <li class="scene-list-item">Майстер-клас з машинобудування
-                            17:00-18:00</li>
-                        <li class="scene-list-item">Майстер-клас з роботехінки
-                            18:00-19:00</li>
-                    </ul>
-                    <img src="./assets/imgs/scene3.png" alt="scene-3">
+                        <ul class="scene-list">
+                            <li class="scene-list-item">Музей науки
+                                <p class="time">14:00-15:00</p></li>
+                            <li class="scene-list-item">Майстер-клас з ліплення
+                                <p class="time">16:00-17:00</p></li>
+                            <li class="scene-list-item">Майстер-клас з машинобудування
+                                <p class="time">17:00-18:00</p></li>
+                            <li class="scene-list-item">Майстер-клас з роботехінки
+                                <p class="time">18:00-19:00</p></li>
+                        </ul>
+                    </div>
+                    <div class="scene-picture">
+                        <img src="./assets/imgs/scene3.png" alt="scene-3">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <button class="button-more">Дізнатися більше</button>
+        <div class="button-div">
+            <button class="button-more">Дізнатися більше</button>
+        </div>
 
-        <div class="present">
-            <p class="present-text">Кожен учасник фестивалю отримає прапор України та футболку з гербом</p>
-            <img src="./assets/imgs/present.png" alt="present">
+        <div class="present-bg">
+            <div class="present-div">
+                <p class="present-text">Кожен учасник фестивалю отримає прапор України та футболку з гербом</p>
+                <img class="present-picture" src="./assets/imgs/present.png" alt="present">
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="contact">
-            <div>
+            <div class="chat-phone">
                 <h2 class="contact-title">Контакти</h2>
-                <a href="#">
-                    <img src="./assets/imgs/Phone.png" alt='logo'/>
-                </a>
-                <p class="phone">Якщо у вас виникають питання - телефонуйте за номером 0-987-654-321</p>
-                <a href="#">
-                    <img src="./assets/imgs/TelegramLogo.png" alt='logo'/>
-                </a>
-                <a href="#">
-                    <img src="./assets/imgs/WhatsappLogo.png" alt='logo'/>
-                </a>
-                <p class="chat">Або пишіть нам у чат-бот</p>
+                <div class="contact-data">
+                    <a href="#" class="phone-logo">
+                        <img src="./assets/imgs/Phone.png" alt='phone-logo'/>
+                    </a>
+                    <p class="phone">Якщо у вас виникають питання - телефонуйте за номером 0-987-654-321</p>
+                    <a href="#" class="telegram-logo">
+                        <img src="./assets/imgs/TelegramLogo.png" alt='telegram-logo'/>
+                    </a>
+                    <a href="#" class="whatsapp-logo">
+                        <img src="./assets/imgs/WhatsappLogo.png" alt='whatsapp-logo'/>
+                    </a>
+                    <p class="chat">Або пишіть нам у чат-бот</p>
+                </div>
             </div>
 
             <div class="subscribe">
-                <p class="subscribe-text">Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</p>
-                <input type="text" name="Ім’я">
-                <input type="email" name="Емейл" id="">
-                <button class="subscribe-button">Підписатися</button>
+                <img class="email-picture" src="./assets/imgs/email.png" alt="">
+                <div class="subscribe-form">
+                    <p class="subscribe-text">Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</p>
+                    <input class="name" type="text" name="Ім’я" placeholder="Ім’я">
+                    <input class="email" type="email" name="Емейл" placeholder="Емейл">
+                    <button class="subscribe-button">Підписатися</button>
+                </div>
             </div>
         </div>
     </footer>
